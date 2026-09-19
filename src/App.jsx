@@ -14,10 +14,14 @@ export default function FYPBuddyLanding() {
           </span>
         </div>
         <div>
-          <button className="hidden md:inline-block px-6 py-2 text-sm font-semibold text-gray-300 hover:text-white transition-colors">
+          <button 
+            onClick={() => alert("Dashboard access is currently limited to active enterprise partners. Please book a demo to get your pilot access!")}
+            className="hidden md:inline-block px-6 py-2 text-sm font-semibold text-gray-300 hover:text-white transition-colors">
             Login
           </button>
-          <button className="bg-green-500 hover:bg-green-600 text-black px-6 py-2 rounded-md font-bold text-sm transition-all shadow-[0_0_15px_rgba(34,197,94,0.4)]">
+          <button 
+            onClick={() => window.open('https://calendly.com/rohanahmed18datascience/30min', '_blank')}
+            className="bg-green-500 hover:bg-green-600 text-black px-6 py-2 rounded-md font-bold text-sm transition-all shadow-[0_0_15px_rgba(34,197,94,0.4)]">
             Book a Demo
           </button>
         </div>
@@ -39,19 +43,22 @@ export default function FYPBuddyLanding() {
             Stop hunting down memory leaks and security flaws. FYP Buddy is an AI-powered secure sandbox that completely auto-heals your messy backend code and generates an Enterprise Audit Report instantly.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-green-500 hover:bg-green-600 text-black px-8 py-4 rounded-md font-bold text-lg transition-all shadow-[0_0_20px_rgba(34,197,94,0.3)]">
+            <button 
+              onClick={() => window.open('https://calendly.com/rohanahmed18datascience/30min', '_blank')}
+              className="bg-green-500 hover:bg-green-600 text-black px-8 py-4 rounded-md font-bold text-lg transition-all shadow-[0_0_20px_rgba(34,197,94,0.3)]">
               Start 7-Day Free Pilot
             </button>
-            <button className="border border-gray-700 hover:bg-gray-800 text-white px-8 py-4 rounded-md font-semibold text-lg transition-colors">
+            <button 
+              onClick={() => window.open('https://github.com/RohanAhmed01', '_blank')}
+              className="border border-gray-700 hover:bg-gray-800 text-white px-8 py-4 rounded-md font-semibold text-lg transition-colors">
               Read the Docs
             </button>
           </div>
         </div>
 
-        {/* Video Area - Yahan Video Tag Add Kiya Hai */}
+        {/* Video Area */}
         <div className="mt-20 max-w-5xl mx-auto bg-gray-900 rounded-xl border border-gray-800 shadow-2xl overflow-hidden aspect-video relative group">
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all z-10 cursor-pointer pointer-events-none">
-            {/* Play Icon hidden by default if autoPlay is on, but kept for aesthetics */}
           </div>
           <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
             <source src={demoVideo} type="video/mp4" />
@@ -113,7 +120,9 @@ export default function FYPBuddyLanding() {
               <li className="flex items-center">✅ Export PDF Audit Reports</li>
               <li className="flex items-center">✅ 7-Day Free Pilot Included</li>
             </ul>
-            <button className="w-full bg-gray-800 hover:bg-gray-700 text-white py-3 rounded-md font-bold transition-colors">
+            <button 
+              onClick={() => window.open('https://calendly.com/rohanahmed18datascience/30min', '_blank')}
+              className="w-full bg-gray-800 hover:bg-gray-700 text-white py-3 rounded-md font-bold transition-colors">
               Start Free Pilot
             </button>
           </div>
@@ -135,7 +144,9 @@ export default function FYPBuddyLanding() {
               <li className="flex items-center">✅ 100% Data Privacy (No Cloud API)</li>
               <li className="flex items-center">✅ Custom Security Rules</li>
             </ul>
-            <button className="w-full bg-green-500 hover:bg-green-600 text-black py-3 rounded-md font-bold transition-colors">
+            <button 
+              onClick={() => window.open('https://calendly.com/rohanahmed18datascience/30min', '_blank')}
+              className="w-full bg-green-500 hover:bg-green-600 text-black py-3 rounded-md font-bold transition-colors">
               Contact Sales
             </button>
           </div>
